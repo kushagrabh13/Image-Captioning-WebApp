@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Captioning</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css"  media="screen,projection"/>
+        <!--Default Theme-->
+        <link type="text/css" rel="stylesheet" href="../static/css/font-awesome.min.css" >
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../static/css/home.css"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    
+    <body>
+	<nav>
+            <div class="nav-wrapper teal lighten-2 ">
+                <a style= "font-size: 17px;">Image</a><a style="font-size: 25px;" href="#" class="brand-logo">Captioning</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Repo</a></li>
+                </ul>
+            </div>
+        </nav>
+        	<div id="frm" class="container">
+					  
+				<div class="row">
+					<form id="upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 myform" novalidate>
+						<div class="input-group">
+							<input type="file" name="file" placeholder="Submit Your Image" class="form-control input-lg requiredField" accept="image/*" multiple>
+    						<span class="input-group-btn">
+								<button name="submit" type="submit" class="btn">Predict!</button>
+							</span>
+						</div>
+						<input type="hidden" name="submitted" id="submitted2" value="true">
+					</form>
+				</div>	
+				</div>
+			</div>
+    <footer class="page-footer clearfix">
+        <div class="container">
+            <div class="row">
+              <div class="col s12 offset-s3"
+                <div id="social" class="content-block">
+            <div class="container text-center">
+                   <div class="hexagon"><a href="#"><img class="i" src="../static/css/github-octocat.png"></img></a></div>
+            </div>        
+        </div>
+              
+            </div>
+          </div>
+          <div class="footer-copyright teal lighten-2 ">
+            <div class="container">
+            &copy; 2017, Kushagra Bhatnagar and Nilay Shrivastava
+            </div>
+          </div>
+        </footer>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../static/js/home.js"></script>
+    </body>
+</html>

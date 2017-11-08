@@ -1,0 +1,107 @@
+body{
+    background: url("../img/bg4.jpg");
+    background-size: cover;
+    overflow: auto;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,.navbar {
+    /*font-family:'Oswald';*/
+    font-family: 'News Cycle', sans-serif;
+    /*font-weight:100;*/
+    font-weight: 400;
+}
+.owl-carousel{
+    margin-top: 150px;
+}
+.carousel-control {
+    z-index:9999;
+}
+
+.carousel-control>img {
+    position:absolute;
+    top:42%;
+    width:30%;
+}
+
+.left.carousel-control>img {
+    left:30%;
+}
+
+.right.carousel-control>img {
+    right:30%;
+}
+
+.owl-carousel .owl-item img {
+    height:auto;
+    width:100%;
+    display:block;
+    position:relative;
+}
+
+.owl-carousel .item {
+    margin:0px;
+}
+
+.owl-item>div {
+    position:relative;
+}
+
+.owl-item>div a {
+    position:absolute;
+    bottom:0px;
+    padding:8px;
+    background:rgba(0,0,0,0.75);
+    right:0;
+    color:white;
+    text-transform:uppercase;
+    z-index: 2;
+}
+
+.owl-carousel .owl-item div:before {
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position:absolute;
+    content:'';
+    background:rgba(5,27,26,1);
+    z-index:1;
+    opacity:0.5;
+    /*transition*/
+    -webkit-transition:opacity 0.4s;
+    -moz-transition:opacity 0.4s;
+    -o-transition:opacity 0.4s;
+    transition:opacity 0.4s;
+}
+
+.owl-carousel .owl-item:hover div:before {
+    opacity: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #000000;
+}
+a {
+    color:#000000;
+    text-align: center;
+    font-weight: 200;
+}
+a:hover {
+    color:#ec343c;
+    text-decoration: none;
+}
+.nav-wrapper{
+    padding-left: 20px;
+}
+
+.content-block-dark {
+    background:#222222;
+}
+
+.page-footer{
+    position: absolute;
+    background-color: transparent;
+    bottom: 0px;
+    width: 100%;
+}
